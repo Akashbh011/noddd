@@ -108,7 +108,6 @@ const adminSchema = new mongoose.Schema({
 });
 
 const AdminModel = mongoose.model('Admin', adminSchema);
-
 const storageSchema = new mongoose.Schema({
   id: String,
   src: String,
@@ -171,7 +170,7 @@ const storageData = [{
   flag:false
 }];
 
-var storageData2=[{
+const storageData2=[{
   id:"div1",
   src:"https://images-na.ssl-images-amazon.com/images/I/61nIXPBGGBL.jpg",
   shirt:"Hmcozy-Sports Cycling Bicycle",
@@ -218,7 +217,7 @@ var storageData2=[{
 }];
 
 
-var storageData3=[{
+const storageData3=[{
   id:"div1",
   src:"https://pemmzchannel.com/wp-content/uploads/2021/02/06e3f32172a8d6d8b598415df72d21e9.jpg",
   shirt:"ASUS ROG gaming laptop",
@@ -262,31 +261,11 @@ var storageData3=[{
   price:"120000",
   rating:"4.2",
   flag:false
-}]
-// Insert the "storage" data into the collection
-StorageModel.insertMany(storageData, (error) => {
-  if (error) {
-    console.error('Error initializing the Storage collection:', error);
-  } else {
-    console.log('Storage collection initialized successfully');
-  }
-});
-StorageModel2.insertMany(storageData2, (error) => {
-  if (error) {
-    console.error('Error initializing the Storage collection:', error);
-  } else {
-    console.log('Storage collection initialized successfully');
-  }
-});
-StorageModel3.insertMany(storageData3, (error) => {
-  if (error) {
-    console.error('Error initializing the Storage collection:', error);
-  } else {
-    console.log('Storage collection initialized successfully');
-  }
-});
+}];
 
-
+   StorageModel.insertMany(storageData);
+   StorageModel2.insertMany(storageData2);
+   StorageModel3.insertMany(storageData3);
 
 
 const app = express();
@@ -788,7 +767,7 @@ app.post('/signup', async (req, res) => {
     const { name, password } = req.body;
   
     // Check if the provided credentials are correct
-    const admin = await AdminModel.findOne({ name, password });
+    const admin = await UserModel.findOne({ name, password });
   
     if (admin) {
       // Credentials are correct, redirect to the addnew page
@@ -847,4 +826,5 @@ app.post('/signup', async (req, res) => {
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
 });
+
 
