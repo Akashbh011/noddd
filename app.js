@@ -4,7 +4,7 @@ const fs =require("fs");
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
-const MONGODB_URI='mongodb://192.168.89.109:27017/contactcp';
+// const MONGODB_URI='mongodb://192.168.89.109:27017/contactcp';
 
 
 const dotenv = require('dotenv');
