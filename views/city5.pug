@@ -1,0 +1,67 @@
+//- extends base1.pug
+
+block scripts
+  //- script(src='/static/index.js')
+  //- // Include Bootstrap JS (optional)
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+
+block style
+  style.
+    .category-box {
+      padding: 20px;
+      margin: 35px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 8px 8px 10px rgba(191, 0, 255,0.9);
+    }
+    .box-regular {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+    .box-premium {
+      background-color: #e74c3c;
+      color: #ffffff;
+    }
+    .box-another {
+      background-color: #27ae60;
+      color: #ffffff;
+    }
+    
+
+block content
+  doctype html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Product Categories
+    // Include Bootstrap CSS
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+
+  .container.text-center.mt-5
+    h1 Select The Product Category
+    h2 To proceed further...
+    .row.mt-5
+      // Box 1: Regular
+      .col-md-4
+      a(href='/regular')
+        .category-box.box-regular
+          h3 Regular
+          p A category for everyday products.
+          
+          strong(style="font-weight: bold;") Rent Limit (2 days -2 months).
+      // Box 2: Long Term Premium
+      .col-md-4
+      a(href='/long-term-category')
+        .category-box.box-premium
+          h3 Long Term Premium
+          p Discover our long-term offerings.
+          strong(style="font-weight: bold;") Rent Limit (2 months -6 months).
+      // Box 3: Another Category
+      .col-md-4
+      a(href='/another-category')
+        .category-box.box-another
+          h3 Another Category
+          p Unique and diverse product choices.
+          strong(style="font-weight: bold;") Rent Limit (2 days -6 months).

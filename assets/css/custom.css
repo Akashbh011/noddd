@@ -1,0 +1,89 @@
+/*
+Custom Css
+*/
+<<<<<<< HEAD
+
+#logoimage{
+    height: 80px;
+    width: 80px;
+    border-radius: 45px;
+}
+#billgates{
+
+    height: 500px;
+    filter:drop-shadow(3px 3px);
+    margin-left: 100px;
+}
+#electronicsimg{
+    height: 400px;
+    width: 500px;
+    margin-left: 0px;
+    border-radius: 30px;
+}
+#aboutbackground{
+    background-color:rgb(5, 1, 24)!important;
+}
+#aboutnav{
+    background-color:rgb(5,1,24) !important;
+}
+.nav-link{
+    color: bisque !important;
+}
+.col-lg-6.m-auto{
+    color: antiquewhite !important;
+}
+.header_section{
+    background-color:rgb(5, 1, 24)!important;
+}
+#imptochange{
+    background-color:rgb(5, 1, 24)!important;
+
+
+}
+
+.live_text{
+    color: antiquewhite !important;
+
+}
+#needtochange{
+    background-color:rgb(5, 1, 24)!important;
+
+
+}
+#needtoaddcss{
+    background-color:rgb(5, 1, 24)!important;
+
+}
+#needtobebright{
+    color: antiquewhite;
+}
+.delser{
+    height: 120px !important;
+    width: 145px !important;
+    background-color: transparent !important;
+    border:none !important;
+    border-radius: 50px;
+}
+.h11{
+    color: rgb(181, 223, 255) !important;
+    font-weight: bold !important;
+    background-color: blue;
+}
+.iinfo{
+    color: red;
+}
+/* Add this to your CSS file */
+.popup-content {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add any additional styling as needed */
+#billgates{
+    border-radius: 30px;
+
+}
+=======
+>>>>>>> c3b256b6b1893e077880267607c55f08b5b1354a

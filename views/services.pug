@@ -1,0 +1,634 @@
+//- extends base1.pug
+
+block scripts 
+    script(src='/static/index.js')
+    script(src='html/js/jquery.min.js')
+    script(src='html/js/popper.min.js')
+    script(src='html/js/bootstrap.bundle.min.js')
+    script(src='/html/js/jquery-3.0.0.min.js')
+    script(src='/html/js/plugin.js')
+    // sidebar
+    script(src='/html/js/jquery.mCustomScrollbar.concat.min.js')
+    script(src='/html/js/custom.js')
+    // javascript
+    script(src='/html/js/owl.carousel.js')
+    script(src='https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js')
+   
+    link(rel='stylesheet', href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    // owl stylesheets
+   
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css', media='screen')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD', crossorigin='anonymous')
+    
+
+block style 
+    style 
+        //- include ../static/style.css
+        //- include ../static/stylecontact.css
+        //- include ../static/stylecity1.css
+        include ../static/styleservices.css
+        include ../html/css/bootstrap.min.css
+        include ../html/css/style.css
+        include ../html/css/responsive.css
+        include ../html/css/jquery.mCustomScrollbar.min.css
+        include ../html/css/owl.carousel.min.css
+        include ../assets/css/custom.css
+        //- include ../html/css/owl.theme.default.min.css
+        //- include ../html/images/fevicon.png
+        
+        
+        
+block content   doctype html
+html(lang='en')
+  head
+    // basic
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // mobile metas
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='initial-scale=1, maximum-scale=1')
+    // site metas
+    title Products
+    meta(name='keywords', content='')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    // bootstrap css
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    // style css
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    // Responsive
+    link(rel='stylesheet', href='css/responsive.css')
+    // fevicon
+    link(rel='icon', href='images/fevicon.png', type='image/gif')
+    // Scrollbar Custom CSS
+    link(rel='stylesheet', href='css/jquery.mCustomScrollbar.min.css')
+    // Tweaks for older IEs
+    link(rel='stylesheet', href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    // owl stylesheets
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css', media='screen')
+  body#needtoaddcss
+    // header section start
+    .header_section
+      .container-fluid
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+          .logo
+            a(href='index.html')
+              img#logoimage(src='/static/logo.png')
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+              li.nav-item
+                a.nav-link(href='/') Home
+              li.nav-item
+                a.nav-link(href='/about') About
+              li.nav-item
+                a.nav-link(href='/rent') Vendors
+              li.nav-item
+                a.nav-link(href='/about') Blog
+              li.nav-item
+                a.nav-link(href='/contact1') Contact us
+            form.form-inline.my-2.my-lg-0
+              button.btn.btn-outline-success.my-2.my-sm-0(type='submit') GET STARTED
+            .search_icon
+              ul
+                li
+                  a(href='#')
+                    img(src='/static/user-icon.png')
+                li
+                  a(href='#')
+                    img(src='/static/user-icon.png')
+                li
+                  a(href='#')
+                    img(src='/static/search-icon.png')
+      // header section end
+    // product section start
+    .product_section.layout_padding.margin_top0#needtoaddcss
+      .container
+        h2.tariffs_text -E-rental System-
+        h1.choose_text Choose your plan
+        p.lorem_text1
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum, est ac faucibus hendrerit, mauris ante viverra urna, in elementum urna est ut ligula.
+        .product_section2
+          .row
+            .col-lg-4.col-sm-12
+              h2.easy_text REGULAR
+              h1.internet_text electronics @
+              .month_main.clearfix
+                h1.dolor_text ₹ 24.99 
+                h2.month_text Month
+                p.long_text
+                  | It is a long established f
+                  | act distracteontent
+              .seemore_main
+                .see_more
+                  a(href='#') SEE MORE
+            .col-lg-4.col-sm-12
+              h2.easy_text LONG TERM
+              h1.internet_text Appliances @
+              .month_main.clearfix
+                h1.dolor_text ₹ 49.99
+                h2.month_text Month
+                p.long_text
+                  | It is a long established f
+                  | act distracteontent
+              .seemore_main
+                .see_more
+                  a(href='#') SEE MORE
+            .col-lg-4.col-sm-12
+              h2.easy_text PREMIUM
+              h1.internet_text Equipments
+              .month_main.clearfix
+                h1.dolor_text ₹ 99.99
+                h2.month_text Month
+                p.long_text
+                  | It is a long established f
+                  | act distracteontent
+              .seemore_main
+                .see_more
+                  a(href='#') SEE MORE
+    // product section end
+    // footer section start
+    .footer_section.layout_padding.margin_top0
+      .container
+        .row
+          .col-lg-3.col-sm-6
+            .fooer_logo
+              img#logoimage(src='/static/logo.png')
+            h1.customer_text CUSTOMER SERVICE
+            p.footer_lorem_text
+              
+              | "24/7 Customer Support:
+              | Our dedicated team is available
+              | around the clock to assist you with
+              | any inquiries or concerns.
+  
+              
+          .col-lg-3.col-sm-6
+            h1.customer_text LET US HELP YOU
+            p.footer_lorem_text
+              |  Our customer support team is 
+              | here to ensure a smooth and 
+              | enjoyable experience, ready to
+              | assist with any questions 
+              |or issues you may encounter
+              
+          .col-lg-3.col-sm-6
+            h1.customer_text INFORMATION
+            p.footer_lorem_text1
+              | About Us
+              br
+              | Careers
+              br
+              | Sell on shopee
+              br
+              | Press &amp; News
+              br
+              | Competitions
+              br
+              | Terms &amp; Conditions
+          .col-lg-3.col-sm-6
+            h1.customer_text OUR SHOP
+            p.footer_lorem_text
+              | "24/7 Customer Support:
+              | Our dedicated team is available
+              | around the clock to assist you with
+              | any inquiries or concerns.
+            .social_icon
+              ul
+                li
+                  a(href='#')
+                    img(src='/static/fb-icon.png')
+                li
+                  a(href='#')
+                    img(src='/static/twitter-icon.png')
+                li
+                  a(href='#')
+                    img(src='/static/instagram-icon.png')
+                li
+                  a(href='#')
+                    img(src='/static/linkedin-icon.png')
+    // footer section end
+    // copyright section start
+    .copyright_section
+      .container
+        .border
+        p.copyright_text
+          | 2023 All Rights Reserved. Design by 
+          a(href='https://html.design') VIT group-14
+    // copyright section end
+    // Javascript files
+    
+   
+ 
+    //- .container
+    //-   h2 Our Services
+    //-   section.services
+    //-     .card
+    //-       .content
+    //-         .icon
+    //-           i.fa.fa-code
+    //-         .title Web Development
+    //-         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.
+    //-     .card
+    //-       .content
+    //-         .icon
+    //-           i.fa.fa-mobile
+    //-         .title App Development
+    //-         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.
+    //-     .card
+    //-       .content
+    //-         .icon
+    //-           i.fa.fa-paint-brush
+    //-         .title Web Design 
+    //-         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.
+    //-     .card
+    //-       .content
+    //-         .icon
+    //-           i.fa.fa-laptop
+    //-         .title Responsive Design 
+    //-         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.
+    //-     .card
+    //-       .content
+    //-         .icon
+    //-           i.fa.fa-line-chart
+    //-         .title Advertising 
+    //-         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.
+    //-     .card
+    //-       .content
+    //-         .icon
+    //-           i.fa.fa-wordpress
+    //-         .title Wordpress
+    //-         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.
+  
+    //- section.banner(data-scroll-index='0')
+    //-   .banner-overlay
+    //-     .container
+    //-       .row
+    //-         .col-md-8.col-sm-12
+    //-           .banner-text
+    //-             h2.white Best App Website Template
+    //-             h6.white
+    //-               | This awesome template designed by 
+    //-               a.weblink(href='http://w3Template.com', target='_blank', rel='dofollow') W3 Template
+    //-               | .
+    //-             p.banner-text.white
+    //-               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit neque massa, sit amet tristique ante porta ut. In sodales et justo vel vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+    //-             ul
+    //-               li
+    //-                 a(href='#')
+    //-                   img.wow.fadeInUp(src='images/appstore.png', data-wow-delay='0.4s')
+    //-               li
+    //-                 a(href='#')
+    //-                   img.wow.fadeInUp(src='images/playstore.png', data-wow-delay='0.7s')
+    //-         .col-md-4.col-sm-12
+    //-           img.img-fluid.wow.fadeInUp(src='images/iphone-screen.png')
+    //-   span.svg-wave
+    //-     img.svg-hero(src='images/applight-wave.svg')
+    //- // -----Banner End-----
+    //- // -----About End-----
+    //- section.about.section-padding.prelative(data-scroll-index='1')
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center
+    //-           h3 About
+    //-           span.line
+    //-           p
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-         .section-content.text-center
+    //-           .row
+    //-             .col-md-4
+    //-               .icon-box.wow.fadeInUp(data-wow-delay='0.2s')
+    //-                 i.fa.fa-life-ring(aria-hidden='true')
+    //-                 h5 Support
+    //-                 p
+    //-                   | Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.
+    //-             .col-md-4
+    //-               .icon-box.wow.fadeInUp(data-wow-delay='0.4s')
+    //-                 i.fa.fa-mobile(aria-hidden='true')
+    //-                 h5 Cross Platform
+    //-                 p
+    //-                   | Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.
+    //-             .col-md-4
+    //-               .icon-box.wow.fadeInUp(data-wow-delay='0.6s')
+    //-                 i.fa.fa-bolt(aria-hidden='true')
+    //-                 h5 Fast
+    //-                 p
+    //-                   | Phasellus lobortis justo a magna facilisis, in commodo tellus rutrum. Sed vitae condimentum nulla.
+    //-           a.about-btn(href='#') Learn More
+    //- // -----About End-----
+    //- // -----Video Start-----
+    //- section.video-section.prelative.text-center.white
+    //-   .section-padding.video-overlay
+    //-     .container
+    //-       h3 Watch Now
+    //-       i#video-icon.fa.fa-play(aria-hidden='true')
+    //-       .video-popup
+    //-         .video-src
+    //-           .iframe-src
+    //-             iframe(src='https://www.youtube.com/embed/Ku52zNnft8k?rel=0&showinfo=0', allowfullscreen='')
+    //- // -----Video End-----
+    //- // -----Features Start-----
+    //- section.feature.section-padding(data-scroll-index='2')
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center
+    //-           h3 Features
+    //-           span.line
+    //-           p
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-         .section-content.text-center
+    //-           .row
+    //-             .col-md-4.col-sm-12
+    //-               .media.single-feature.wow.fadeInUp(data-wow-delay='0.2s')
+    //-                 .media-body.text-right.media-right-margin
+    //-                   h5 Fast Processing
+    //-                   p
+    //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore
+    //-                 .media-right.icon-border
+    //-                   span.fa.fa-bolt(aria-hidden='true')
+    //-               .media.single-feature.wow.fadeInUp(data-wow-delay='0.4s')
+    //-                 .media-body.text-right.media-right-margin
+    //-                   h5 Low Power Consuming
+    //-                   p
+    //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore
+    //-                 .media-right.icon-border
+    //-                   span.fa.fa-battery-full(aria-hidden='true')
+    //-               .media.single-feature.wow.fadeInUp(data-wow-delay='0.6s')
+    //-                 .media-body.text-right.media-right-margin
+    //-                   h5 Wifi Compatibility
+    //-                   p
+    //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore
+    //-                 .media-right.icon-border
+    //-                   span.fa.fa-wifi(aria-hidden='true')
+    //-             .col-md-4.d-none.d-md-block.d-lg-block
+    //-               .feature-mobile
+    //-                 img.img-fluid.wow.fadeInUp(src='images/iphone-screen-with-shadow.png')
+    //-             .col-md-4.col-sm-12
+    //-               .media.single-feature.wow.fadeInUp(data-wow-delay='0.2s')
+    //-                 .media-left.icon-border.media-right-margin
+    //-                   span.fa.fa-check-double(aria-hidden='true')
+    //-                 .media-body.text-left
+    //-                   h5 Regular Updates
+    //-                   p
+    //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore
+    //-               .media.single-feature.wow.fadeInUp(data-wow-delay='0.4s')
+    //-                 .media-left.icon-border.media-right-margin
+    //-                   span.fa.fa-dollar-sign(aria-hidden='true')
+    //-                 .media-body.text-left
+    //-                   h5 Save Money
+    //-                   p
+    //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore
+    //-               .media.single-feature.wow.fadeInUp(data-wow-delay='0.6s')
+    //-                 .media-left.icon-border.media-right-margin
+    //-                   span.fa.fa-hdd(aria-hidden='true')
+    //-                 .media-body.text-left
+    //-                   h5 Unlimited Storage
+    //-                   p
+    //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore
+    //- // -----Features End-----
+    //- // -----Team Start-----
+    //- section.team.section-padding(data-scroll-index='3')
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center
+    //-           h3 Our Team
+    //-           span.line
+    //-           p
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-         .section-content.text-center
+    //-           .row
+    //-             .col-md-4
+    //-               .team-detail.wow.bounce(data-wow-delay='0.2s')
+    //-                 img.img-fluid(src='images/user1.jpg')
+    //-                 h4 Nitu Singh
+    //-                 p Marketing Specialist
+    //-             .col-md-4
+    //-               .team-detail.wow.bounce(data-wow-delay='0.4s')
+    //-                 img.img-fluid(src='images/user2.jpg')
+    //-                 h4 Yogesh Singh
+    //-                 p CEO &amp; Founder
+    //-             .col-md-4
+    //-               .team-detail.wow.bounce(data-wow-delay='0.6s')
+    //-                 img.img-fluid(src='images/user3.jpg')
+    //-                 h4 Nisha Sharma
+    //-                 p Web Developer
+    //- // -----Team End-----
+    //- // -----Testimonial Start-----
+    //- section.testimonial.section-padding(data-scroll-index='4')
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center.white
+    //-           h3 Testimonials
+    //-           span.line
+    //-           p.white
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-         .section-content
+    //-           .row
+    //-             .offset-md-2.col-md-8.col-sm-12
+    //-               .slider
+    //-                 .slider-item
+    //-                   .test-img
+    //-                     img(src='images/user1.jpg', alt='Placeholder', width='157', height='157')
+    //-                   .test-text
+    //-                     span.title
+    //-                       span John Michal
+    //-                       |  Digital Designer
+    //-                     |  Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat.
+    //-                 .slider-item
+    //-                   .test-img
+    //-                     img(src='images/user3.jpg', alt='Placeholder', width='157', height='157')
+    //-                   .test-text
+    //-                     span.title
+    //-                       span Steve Smith
+    //-                       |  App User
+    //-                     |  Euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+    //-                 .slider-item
+    //-                   .test-img
+    //-                     img(src='images/user3.jpg', alt='Placeholder', width='157', height='157')
+    //-                   .test-text
+    //-                     span.title
+    //-                       span Gordon Shaw
+    //-                       |  Blogger
+    //-                     |  Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam eratvo lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+    //- // -----Testimonial End-----
+    //- // -----FAQ Start-----
+    //- section.faq.section-padding.prelative(data-scroll-index='5')
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center
+    //-           h3 Frequently Asked Questions
+    //-           span.line
+    //-           p
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-         .section-content
+    //-           .row
+    //-             .col-md-6.faq-content.wow.fadeInUp(data-wow-delay='0.2s')
+    //-               h4 Nam tellus felis, dignissim quis dui ?
+    //-               p
+    //-                 | Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo.
+    //-             .col-md-6.faq-content.wow.fadeInUp(data-wow-delay='0.2s')
+    //-               h4 Mauris scelerisque, dui non faucibus vulputate ?
+    //-               p
+    //-                 | Sed tempus in neque ac rhoncus. Phasellus vehicula, erat tempor malesuada egestas, mauris tellus malesuada erat, at vestibulum nulla ex et lectus. Nullam elit est, ultricies et tellus ac, euismod placerat orci.
+    //-             .col-md-6.faq-content.wow.fadeInUp(data-wow-delay='0.4s')
+    //-               h4 Nullam elit est, ultricies et tellus ac ?
+    //-               p
+    //-                 | Ut vestibulum euismod aliquet. Quisque nec malesuada nibh. Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi. Curabitur id porta ipsum, et vestibulum dui.
+    //-             .col-md-6.faq-content.wow.fadeInUp(data-wow-delay='0.4s')
+    //-               h4 Suspendisse fermentum placerat enim, at pellentesque augue elit est ?
+    //-               p
+    //-                 | Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi.
+    //-             .col-md-6.faq-content.wow.fadeInUp(data-wow-delay='0.6s')
+    //-               h4 Ut vestibulum euismod aliquet. Quisque nec malesuada nibh ?
+    //-               p
+    //-                 | Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.
+    //-             .col-md-6.faq-content.wow.fadeInUp(data-wow-delay='0.6s')
+    //-               h4 Donec commodo dapibus congue ?
+    //-               p
+    //-                 | Nullam elit est, ultricies et tellus ac, euismod placerat orci fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.
+    //- // -----FAQ End-----
+    //- // -----Contact Start-----
+    //- section.contact.section-padding(data-scroll-index='6')
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center
+    //-           h3 Contact us
+    //-           span.line
+    //-           p
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-         .section-content
+    //-           .row
+    //-             .col-sm-12.col-md-12.col-lg-8
+    //-               form#contact_form(action='')
+    //-                 .row
+    //-                   .col
+    //-                     input#your_name.form-input.w-100(type='text', name='full-name', placeholder='Full Name', required='')
+    //-                   .col
+    //-                     input#email.form-input.w-100(type='email', name='email', placeholder='Email', required='')
+    //-                 input#subject.form-input.w-100(type='text', name='subject', placeholder='Subject')
+    //-                 textarea#message.form-input.w-100(placeholder='Message', name='message')
+    //-                 button.btn-grad.w-100.text-uppercase(type='submit', name='button') submit
+    //-             .col-sm-12.col-md-12.col-lg-4
+    //-               .contact-info.white
+    //-                 .contact-item.media
+    //-                   i.fa.fa-map-marker-alt.media-left.media-right-margin
+    //-                   .media-body
+    //-                     p.text-uppercase Address
+    //-                     p.text-uppercase New Delhi, India
+    //-                 .contact-item.media
+    //-                   i.fa.fa-mobile.media-left.media-right-margin
+    //-                   .media-body
+    //-                     p.text-uppercase Phone
+    //-                     p.text-uppercase
+    //-                       a.text-white(href='tel:+15173977100') 009900990099
+    //-                 .contact-item.media
+    //-                   i.fa.fa-envelope.media-left.media-right-margin
+    //-                   .media-body
+    //-                     p.text-uppercase E-mail
+    //-                     p.text-uppercase
+    //-                       a.text-white(href='mailto:abcdefg@gmail.com') yogeshsingh.now@gmail.com
+    //-                 .contact-item.media
+    //-                   i.fa.fa-clock.media-left.media-right-margin
+    //-                   .media-body
+    //-                     p.text-uppercase Working Hours
+    //-                     p.text-uppercase Mon-Fri 9.00 AM to 5.00PM.
+    //- // -----Contact End-----
+    //- // -----Download End-----
+    //- section.download.section-padding
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .sectioner-header.text-center.white
+    //-           h3 Download Our App
+    //-           span.line
+    //-           p.white
+    //-             | Sed quis nisi nisi. Proin consectetur porttitor dui sit amet viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra ante.
+    //-       .col-md-12
+    //-         .section-content.text-center
+    //-           ul
+    //-             li
+    //-               a(href='#')
+    //-                 img.wow.fadeInUp(src='images/appstore.png', data-wow-delay='0.4s')
+    //-             li
+    //-               a(href='#')
+    //-                 img.wow.fadeInUp(src='images/playstore.png', data-wow-delay='0.7s')
+    //- // -----Download End-----
+    //- footer.footer-copy
+    //-   .container-fluid
+    //-     .row
+    //-       .col-md-12
+    //-         p
+    //-           | 2018 &copy; Applight. Website Designed by 
+    //-           a(href='http://w3Template.com', target='_blank', rel='dofollow') W3 Template
+    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    //- |  
+    //- script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', integrity='sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T', crossorigin='anonymous')
+    //- |  
+    //- script(src='https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js')
+    //- // scrollIt js
+    //- script(src='js/scrollIt.min.js')
+    //- |  
+    //- script(src='js/wow.min.js')
+    //- |  
+    //- script.
+    //-   wow = new WOW();
+    //-   wow.init();
+    //-   $(document).ready(function(e) {
+    //-   $('#video-icon').on('click',function(e){
+    //-   e.preventDefault();
+    //-   $('.video-popup').css('display','flex');
+    //-   $('.iframe-src').slideDown();
+    //-   });
+    //-   $('.video-popup').on('click',function(e){
+    //-   var $target = e.target.nodeName;
+    //-   var video_src = $(this).find('iframe').attr('src');
+    //-   if($target != 'IFRAME'){
+    //-   $('.video-popup').fadeOut();
+    //-   $('.iframe-src').slideUp();
+    //-   $('.video-popup iframe').attr('src'," ");
+    //-   $('.video-popup iframe').attr('src',video_src);
+    //-   }
+    //-   });
+    //-   $('.slider').bxSlider({
+    //-   pager: false
+    //-   });
+    //-   });
+    //-   $(window).on("scroll",function () {
+    //-   var bodyScroll = $(window).scrollTop(),
+    //-   navbar = $(".navbar");
+    //-   if(bodyScroll > 50){
+    //-   $('.navbar-logo img').attr('src','images/logo-black.png');
+    //-   navbar.addClass("nav-scroll");
+    //-   }else{
+    //-   $('.navbar-logo img').attr('src','images/logo.png');
+    //-   navbar.removeClass("nav-scroll");
+    //-   }
+    //-   });
+    //-   $(window).on("load",function (){
+    //-   var bodyScroll = $(window).scrollTop(),
+    //-   navbar = $(".navbar");
+    //-   if(bodyScroll > 50){
+    //-   $('.navbar-logo img').attr('src','images/logo-black.png');
+    //-   navbar.addClass("nav-scroll");
+    //-   }else{
+    //-   $('.navbar-logo img').attr('src','images/logo-white.png');
+    //-   navbar.removeClass("nav-scroll");
+    //-   }
+    //-   $.scrollIt({
+    //-   easing: 'swing',      // the easing function for animation
+    //-   scrollTime: 900,       // how long (in ms) the animation takes
+    //-   activeClass: 'active', // class given to the active nav element
+    //-   onPageChange: null,    // function(pageIndex) that is called when page is changed
+    //-   topOffset: -63
+    //-   });
+    //-   });

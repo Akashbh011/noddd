@@ -1,0 +1,300 @@
+
+
+block scripts 
+    script(src='/static/index.js')
+    script(src='/assets/js/jquery-1.11.0.min.js')
+    script(src='/assets/js/jquery-migrate-1.2.1.min.js')
+    script(src='/assets/js/bootstrap.bundle.min.js')
+    script(src='/assets/js/templatemo.js')
+    script(src='/assets/js/custom.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='/assets/img/apple-icon.png')
+    link(rel='shortcut icon', type='image/x-icon', href='/assets/img/favicon.ico')
+    link(rel='stylesheet', href='/assets/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/assets/css/templatemo.css')
+    link(rel='stylesheet', href='/assets/css/custom.css')
+    // Load fonts style after rendering the layout styles
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap')
+    link(rel='stylesheet', href='/assets/css/fontawesome.min.css')
+    //
+      TemplateMo 559 Zay Shop
+      https://templatemo.com/tm-559-zay-shop
+
+block style 
+    style 
+        include ../assets/css/bootstrap.min.css
+        include ../assets/css/custom.css
+        include ../assets/css/fontawesome.css
+        include ../assets/css/fontawesome.min.css
+        include ../assets/css/slick-theme.css
+        include ../assets/css/slick-theme.min.css
+        include ../assets/css/slick.min.css
+        include ../assets/css/templatemo.css
+        include ../assets/css/templatemo.min.css
+        //- include ../assets/img/brand_01.png
+        
+        
+
+block content   
+    
+    
+ 
+    // Start Top Nav
+    nav#templatemo_nav_top.navbar.navbar-expand-lg.bg-dark.navbar-light.d-none.d-lg-block
+      .container.text-light
+        .w-100.d-flex.justify-content-between
+          div
+            i.fa.fa-envelope.mx-2
+            a.navbar-sm-brand.text-light.text-decoration-none(href='mailto:info@company.com') info@company.com
+            i.fa.fa-phone.mx-2
+            a.navbar-sm-brand.text-light.text-decoration-none(href='tel:010-020-0340') 010-020-0340
+          div
+            a.text-light(href='https://fb.com/templatemo', target='_blank', rel='sponsored')
+              i.fab.fa-facebook-f.fa-sm.fa-fw.me-2
+            a.text-light(href='https://www.instagram.com/', target='_blank')
+              i.fab.fa-instagram.fa-sm.fa-fw.me-2
+            a.text-light(href='https://twitter.com/', target='_blank')
+              i.fab.fa-twitter.fa-sm.fa-fw.me-2
+            a.text-light(href='https://www.linkedin.com/', target='_blank')
+              i.fab.fa-linkedin.fa-sm.fa-fw
+    // Close Top Nav
+    // Header
+    nav.navbar.navbar-expand-lg.navbar-light.shadow#aboutnav
+      .container.d-flex.justify-content-between.align-items-center
+        a.navbar-brand.text-success.logo.h1.align-self-center(href='/abouts/index.html')
+          img#logoimage(src='/static/logo.png')
+        button.navbar-toggler.border-0(type='button', data-bs-toggle='collapse', data-bs-target='#templatemo_main_nav', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #templatemo_main_nav.align-self-center.collapse.navbar-collapse.flex-fill.d-lg-flex.justify-content-lg-between
+          .flex-fill
+            ul.nav.navbar-nav.d-flex.justify-content-between.mx-lg-auto
+              li.nav-item
+                a.nav-link(href='/') Home
+              li.nav-item
+                a.nav-link(href='/about') About
+              li.nav-item
+                a.nav-link(href='/joinus') join us
+              li.nav-item
+                a.nav-link(href='/contact1') Contact
+          .navbar.align-self-center.d-flex
+            .d-lg-none.flex-sm-fill.mt-3.mb-4.col-7.col-sm-auto.pr-3
+              .input-group
+                input#inputMobileSearch.form-control(type='text', placeholder='Search ...')
+                .input-group-text
+                  i.fa.fa-fw.fa-search
+            a.nav-icon.d-none.d-lg-inline(href='#', data-bs-toggle='modal', data-bs-target='#templatemo_search')
+              i.fa.fa-fw.fa-search.text-dark.mr-2
+            a.nav-icon.position-relative.text-decoration-none(href='#')
+              i.fa.fa-fw.fa-cart-arrow-down.text-dark.mr-1
+              span.position-absolute.top-0.left-100.translate-middle.badge.rounded-pill.bg-light.text-dark 7
+            a.nav-icon.position-relative.text-decoration-none(href='#')
+              i.fa.fa-fw.fa-user.text-dark.mr-3
+              span.position-absolute.top-0.left-100.translate-middle.badge.rounded-pill.bg-light.text-dark +99
+    // Close Header
+    // Modal
+    #templatemo_search.modal.fade.bg-white(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg(role='document')
+        .w-100.pt-1.mb-5.text-right
+          button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+        form.modal-content.modal-body.border-0.p-0(action='', method='get')
+          .input-group.mb-2
+            input#inputModalSearch.form-control(type='text', name='q', placeholder='Search ...')
+            button.input-group-text.bg-success.text-light(type='submit')
+              i.fa.fa-fw.fa-search.text-white
+    section.bg-success.py-5#aboutbackground 
+      .container
+        .row.align-items-center.py-5
+          .col-md-8.text-white
+            h1 About Us
+            p
+              |we take great pride in delivering an extensive array of rental products tailored to your unique requirements. Our core principles of affordability, convenience, and adaptability define the essence of our service. With clear-cut terms and conditions, we ensure that you can access regular-use items, long-term essentials, and premium products, all priced with your budget in mind. Recognizing the demands of your fast-paced lifestyle, we provide round-the-clock service, doorstep deliveries, hassle-free pickups, and efficient shipping and return processes. Welcome to our rental platform, where the synergy of convenience and quality is redefining the way you experience products, making your life more comfortable and enjoyable.
+          .col-md-4
+            img(src='/static/about-hero.svg', alt='About Hero')
+    // Close Banner
+    // Start Section
+    section.container.py-5
+      .row.text-center.pt-5.pb-3
+        .col-lg-6.m-auto
+          h1.h11 Our Key Features
+          p.iinfo
+            | BELOW MENTIONED ARE FEW FEATURE OF THE COMPANY
+      .row
+        .col-md-6.col-lg-3.pb-5#boxinabout
+          .h-100.py-5.services-icon-wap.shadow
+            .h1.text-success.text-center
+              i.fa.fa-truck.fa-lg
+                  img.delser(src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/food-delivery-logo-design-template-a342a3b7515a10c800c6885bce8b3ae9_screen.jpg?ts=1619678752')
+            h2.h5.mt-4.text-center Delivery Services
+        .col-md-6.col-lg-3.pb-5#boxinabout
+          .h-100.py-5.services-icon-wap.shadow
+            .h1.text-success.text-center
+              i.fas.fa-exchange-alt
+                  img.delser(src='https://marketplacer.imgix.net/4k/2_ooXzkmCsy5To7zmEmmlbZoE.jpg?auto=format&fm=pjpg&fit=max&q=90&w=1600&h=1000&s=775787f64dbe4963e9143aa55e35cad5')
+            h2.h5.mt-4.text-center Shipping &amp; Return
+        .col-md-6.col-lg-3.pb-5#boxinabout
+          .h-100.py-5.services-icon-wap.shadow
+            .h1.text-success.text-center
+              i.fa.fa-percent
+              img.delser(src='https://as1.ftcdn.net/v2/jpg/05/52/74/18/1000_F_552741807_Xb7UctHx9eTLyNI0Qj9PqIN6eqORnhPa.jpg')
+            h2.h5.mt-4.text-center pickup services
+        .col-md-6.col-lg-3.pb-5#boxinabout
+          .h-100.py-5.services-icon-wap.shadow
+            .h1.text-success.text-center
+              i.fa.fa-user
+              img.delser(src='https://e7.pngegg.com/pngimages/944/513/png-clipart-24-hour-clock-computer-icons-24-hours-text-logo-thumbnail.png')
+            h2.h5.mt-4.text-center 24 Hours Service
+    // End Section
+    // Start Brands
+    section.bg-light.py-5#aboutbackground
+      .container.my-4
+        .row.text-center.py-3
+          .col-lg-6.m-auto
+            h1.h11 Our Brands
+            p
+              | OUR COMPANY IS ASSOCIATED WITH FEW OF THE MAJOR BRAND IN THE GLOBE 
+              |                         as follows
+          .col-lg-9.m-auto.tempaltemo-carousel
+            .row.d-flex.flex-row
+              // Controls
+              .col-1.align-self-center
+                a.h1(href='#templatemo-slide-brand', role='button', data-bs-slide='prev')
+                  i.text-light.fas.fa-chevron-left
+              // End Controls
+              // Carousel Wrapper
+              .col
+                #templatemo-slide-brand.carousel.slide.carousel-multi-item.pt-2.pt-md-0(data-bs-ride='carousel')
+                  // Slides
+                  .carousel-inner.product-links-wap(role='listbox')
+                    // First slide
+                    .carousel-item.active
+                      .row
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_01.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_02.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_03.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_04.png', alt='Brand Logo')
+                    // End First slide
+                    // Second slide
+                    .carousel-item
+                      .row
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_01.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_02.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_03.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_04.png', alt='Brand Logo')
+                    // End Second slide
+                    // Third slide
+                    .carousel-item
+                      .row
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_01.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_02.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_03.png', alt='Brand Logo')
+                        .col-3.p-md-5
+                          a(href='#')
+                            img.img-fluid.brand-img(src='/static/brand_04.png', alt='Brand Logo')
+                    // End Third slide
+                  // End Slides
+              // End Carousel Wrapper
+              // Controls
+              .col-1.align-self-center
+                a.h1(href='#templatemo-slide-brand', role='button', data-bs-slide='next')
+                  i.text-light.fas.fa-chevron-right
+              // End Controls
+    // End Brands
+    // Start Footer
+    footer#tempaltemo_footer.bg-dark
+      .container
+        .row
+          .col-md-4.pt-5
+            h2.h2.text-success.border-bottom.pb-3.border-light.logo E-RENT
+            ul.list-unstyled.text-light.footer-link-list
+              li
+                i.fas.fa-map-marker-alt.fa-fw
+                                          123 Consectetur at ligula 10660
+              li
+                i.fa.fa-phone.fa-fw
+                a.text-decoration-none(href='tel:010-020-0340') 010-020-0340
+              li
+                i.fa.fa-envelope.fa-fw
+                a.text-decoration-none(href='mailto:vinayak.akash21@vit.edu') xyz@vit.edu
+          .col-md-4.pt-5
+            h2.h2.text-light.border-bottom.pb-3.border-light Products
+            ul.list-unstyled.text-light.footer-link-list
+              li
+                a.text-decoration-none(href='#') Luxury
+              li
+                a.text-decoration-none(href='#') Sport 
+              li
+                a.text-decoration-none(href='#') Men&apos;s accessories
+              li
+                a.text-decoration-none(href='#') Women&apos;s accessories
+              li
+                a.text-decoration-none(href='#') Popular costumes
+              li
+                a.text-decoration-none(href='#') Gym Accessories
+              li
+                a.text-decoration-none(href='#') Sport equipments
+          .col-md-4.pt-5
+            h2.h2.text-light.border-bottom.pb-3.border-light Further Info
+            ul.list-unstyled.text-light.footer-link-list
+              li
+                a.text-decoration-none(href='#') Home
+              li
+                a.text-decoration-none(href='#') About Us
+              li
+                a.text-decoration-none(href='#') Shop Locations
+              li
+                a.text-decoration-none(href='#') FAQs
+              li
+                a.text-decoration-none(href='#') Contact
+        .row.text-light.mb-4
+          .col-12.mb-3
+            .w-100.my-3.border-top.border-light
+          .col-auto.me-auto
+            ul.list-inline.text-left.footer-icons
+              li.list-inline-item.border.border-light.rounded-circle.text-center
+                a.text-light.text-decoration-none(rel='nofollow', target='_blank', href='http://fb.com/templatemo')
+                  i.fab.fa-facebook-f.fa-lg.fa-fw
+              li.list-inline-item.border.border-light.rounded-circle.text-center
+                a.text-light.text-decoration-none(target='_blank', href='https://www.instagram.com/')
+                  i.fab.fa-instagram.fa-lg.fa-fw
+              li.list-inline-item.border.border-light.rounded-circle.text-center
+                a.text-light.text-decoration-none(target='_blank', href='https://twitter.com/')
+                  i.fab.fa-twitter.fa-lg.fa-fw
+              li.list-inline-item.border.border-light.rounded-circle.text-center
+                a.text-light.text-decoration-none(target='_blank', href='https://www.linkedin.com/')
+                  i.fab.fa-linkedin.fa-lg.fa-fw
+          .col-auto
+            label.sr-only(for='subscribeEmail') Email address
+            .input-group.mb-2
+              input#subscribeEmail.form-control.bg-dark.border-light(type='text', placeholder='Email address')
+              .input-group-text.btn-success.text-light Subscribe
+      .w-100.bg-black.py-3
+        .container
+          .row.pt-2
+            .col-12
+              p.text-left.text-light
+                | Copyright &copy; 2023 VIT group -14 
+            
+                //- a(rel='sponsored', href='https://templatemo.com/page/1', target='_blank') TemplateMo
+    

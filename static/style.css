@@ -1,0 +1,775 @@
+.body{
+    /* background-image: linear-gradient(skyblue,yellow,pink); */
+    /* background-image: url("D:\HTML\complete web dev\backgroundimg.jpg"); */
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+  /*  
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    background-position: center;
+    margin: 0;
+    padding: 0; */
+    
+   
+      background-image: url('backgroundimg.jpg');
+      background-repeat:repeat-y;
+      background-size: 100% auto;
+      background-position: center center;
+      margin: 0;
+      padding: 0;
+      background-color: #23036c;
+    
+    
+    
+   
+    
+  }
+  body.body {
+    #aa.A {
+      nav#nav.navbar {
+        ul {
+          img[src='/static/logo.png'] {
+            /* Adjust logo styles if needed */
+          }
+  
+          li a {
+            /* Normal state styles */
+            color: rgb(255, 255, 255);
+            filter: brightness(500%);
+
+            text-decoration: none;
+            transition: color 0.3s ease; /* Add transition for a smooth effect */
+  
+            &:hover {
+              color: red; /* Adjust the color on hover */
+            }
+  
+            .bright-text {
+              /* Define styles for the bright text */
+              filter: brightness(900%);
+              transition: filter 0.3s ease; /* Add transition for a smooth effect */
+            }
+          }
+        }
+      }
+    }
+  }
+  #tobright{
+    color: white;
+    font-style: italic;
+    font-weight:bold ;
+  }
+  /* 
+  body img{
+    repeat: no-repeat;
+    size:100% 100% ;
+    height: max-content;
+    width: max-content;
+    position: center;
+    margin: 0;
+    padding: 0;
+  } */
+  .row{
+    margin-left: 400px;
+  }
+  .navbar{
+  
+      font-family: 'Baloo Bhai', cursive;
+      background-color: rgb(5, 1, 24);
+      border-radius: 50px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      width:100vw ;
+      top: 0px;
+      opacity:0.7 ;
+      /* font-weight: bold; */
+      font-display: white;
+      
+      
+  }
+  .navbar ul{
+      overflow: auto;
+      padding-left: 100px;
+      padding-left: 20px;
+  }
+  .navbar ul button a{
+    font-family:'Courier New', Courier, monospace;
+    color: #f7f5f2;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .navbar img{
+      
+      
+      height: 60px;
+      width: 70px;
+      
+      float: left ;
+      background-color: rgb(217, 90, 162);
+      border-radius: 30px;
+  
+  }
+  .navbar img:hover{
+      filter:brightness(150%);
+      background-color: rgb(105, 229, 96);
+      
+  }
+  .navbar li{
+      float:left;
+      list-style: none; 
+      margin: 13px 20px;
+      
+  }
+  .navbar li a{
+      padding: 3px 3px;
+      text-decoration: none;
+      color: white;
+  }
+  .navbar li a:hover{
+      color: red
+  }
+  .B{
+      font-family: 'Baloo Bhai', cursive;
+      text-align: center;
+      border-style: solid;
+      border-radius: 20px;
+      padding: 0px;
+      display:flex;
+      margin-left: 500px;
+      margin-right: 500px;
+      margin-top: 80px; 
+     
+      justify-content: center;
+      font-size: 15px;
+      background-image: linear-gradient(45deg, #05dbef, #5e84ef);
+  }
+  .B h2:hover{
+      color: rgb(42, 16, 104);
+  }
+  
+   h2::after{
+      /* color: red; */
+      content: '';
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: rgb(221, 31, 221);
+      transform: scaleX(0);
+      transform-origin:center;
+      transition: transform 0.3s ease;
+      
+  }
+  h2:hover::after{
+      transform: scaleX(1);
+  }
+  
+  
+  .A{
+      height: 60px;
+      top:0px;
+  
+  }
+  A::after{
+      content: '';
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: rgb(234, 31, 234);
+      transform: scaleX(0);
+      transform-origin:left;
+      transition: transform 0.3s ease;
+  
+  }
+  
+  .A:hover::after{
+      transform: scaleX(1);
+  }
+  
+  .navbar li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(234, 31, 234);
+    transform: scaleX(0);
+    transform-origin:left;
+    transition: transform 0.3s ease;
+  
+  }
+  .navbar li a:hover::after{
+    transform: scaleX(1);
+  
+  }
+  
+  
+  
+  
+  .C {
+      display: flex;
+      justify-content: space-between;
+      width: 100vw; /* Adjust the width of the container as needed */
+      height: 400px; /* Adjust the height of the container as needed */
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    .col {
+      display: flex;
+      justify-content:space-around;
+      float: left;
+      
+  
+      
+      width: 23%; /* Adjust the width of each inner box as needed */
+      height: 100%; 
+      /* Adjust the height of each inner box as needed */
+      border: 1px solid black; /* Optional: Add a border to visualize the boxes */
+      
+    }
+  /* 
+  .C ul {
+      flex-direction: left;
+      float:left;
+      list-style: none; 
+      margin: 13px 20px;
+      height:350px;
+      width:22%;
+      border: solid;
+      border-radius: 15px;
+      border-color: rgb(7, 64, 64);
+      box-shadow: 7px 7px 7px 7px ;
+  
+  } */
+  
+  .card {
+  
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+  
+      /* width: 100vw;
+      height: 400px;
+      border-radius: 8px;
+      background: #6c169a;
+      display: flex;
+      /* gap: 5px;
+      padding: .4em; */
+      /* margin-top: 50px;  */
+    }
+    .card div{
+      width: 17%;
+      background-color: rgba(0, 0, 0, 0.39);
+      color: white;
+      margin-top: 30px;
+      border-radius: 10px;
+      /* overflow: hidden; */
+  
+    }
+  
+    .card div h1:hover{
+  
+      font:bold;
+    }
+  
+  
+    
+    /* .card p {
+      height: 100%;
+      flex: 1;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all .5s;
+      /* background: #212121; */
+      /* border: 1px solid #ff5a91;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+    
+    /* .card p:hover {
+      flex: 4;
+      transform: scale(0.9);
+    }
+    
+    .card p span {
+      min-width: 14em;
+      padding: .5em;
+      text-align: center;
+      transform: rotate(-90deg);
+      transition: all .5s;
+      text-transform: uppercase;
+      color: #ff568e;
+      letter-spacing: .1em;
+    }
+    
+    .card p:hover span {
+      transform: rotate(0);
+    } */
+  
+  .card div img{
+    margin: -10px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: all 0.5s;
+  }
+  .card div h1{
+    text-align: center;
+    font-weight: 100;
+    
+  }
+  .card div img:hover{
+    transform: scale(1.15);
+  }
+  
+  div .flip-card {
+      margin-top: 25px;
+      
+      overflow: hidden;
+      background-color: transparent;
+      width:13% ;
+      height: 254px;
+      perspective: 1000px;
+      font-family: sans-serif;
+      justify-content: center;
+    }
+    
+    .title {
+      font-size: 1.5em;
+      font-weight: 900;
+      text-align: center;
+      margin: 0;
+    }
+    
+    div .flip-card .flip-card-inner {
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    div .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+      justify-content: center;
+    }
+    
+    .flip-card-front p{
+      font-family: 'Baloo Bhai', cursive;
+      font-size: 20px;
+    }
+    div .flip-card .flip-card-inner .flip-card-front,div .flip-card .flip-card-inner .flip-card-back {
+      box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border: 1px solid coral;
+      border-radius: 1rem;
+    }
+    
+    div .flip-card .flip-card-inner .flip-card-front {
+      background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+         rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+      color: coral;
+      
+    }
+    
+    div .flip-card .flip-card-inner .flip-card-back {
+      background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+         bisque 40%, rgb(255, 185, 160) 78%);
+      color: white;
+      transform: rotateY(180deg);
+    }
+    .flip-card-front p img {
+      height :100px;
+      width: 100px;
+      border-radius: 60px;
+    }
+  .E div{
+      width: 13%;
+      /* float: ; */
+      display: flex;
+      justify-content: center;
+  }
+  .E {
+    margin-top: 50px;
+      display: flex;
+      justify-content:space-around;
+      gap: 10px;
+      
+      
+      width:100%;
+      height: 300px;
+      border-radius: 1rem;
+       background-color: #4158D0;
+      background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+       box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+       
+  }
+  
+    
+  
+  
+  .main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+    
+    .up {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+    
+    .down {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+    }
+    
+    .card1 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 90px 5px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .instagram {
+      margin-top: 1.5em;
+      margin-left: 1.2em;
+      fill: #cc39a4;
+    }
+    
+    .card2 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 90px 5px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .twitter {
+      margin-top: 1.5em;
+      margin-left: -.9em;
+      fill: #03A9F4;
+    }
+    
+    .card3 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 5px 5px 90px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .github {
+      margin-top: -.6em;
+      margin-left: 1.2em;
+    }
+    
+    .card4 {
+      width: 90px;
+      height: 90px;
+      outline: none;
+      border: none;
+      background: white;
+      border-radius: 5px 5px 90px 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      transition: .2s ease-in-out;
+    }
+    
+    .discord {
+      margin-top: -.9em;
+      margin-left: -1.2em;
+      fill: #8c9eff;
+    }
+    
+    .card1:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #cc39a4;
+    }
+    
+    .card1:hover .instagram {
+      fill: white;
+    }
+    
+    .card2:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #03A9F4;
+    }
+    
+    .card2:hover .twitter {
+      fill: white;
+    }
+    
+    .card3:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: black;
+    }
+    
+    .card3:hover .github {
+      fill: white;
+    }
+    
+    .card4:hover {
+      cursor: pointer;
+      scale: 1.1;
+      background-color: #8c9eff;
+    }
+    
+    .card4:hover .discord {
+      fill: white;
+    }
+  
+    .main{
+  
+      float :left;
+      margin-top: 50px;
+      margin-left: 100px;
+    }
+    .main h3{
+      margin-left: 30px;
+    }
+    .button {
+      position: relative;
+      padding: 10px 22px;
+      border-radius: 6px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      background-color: #7d2ae8;
+      transition: all 0.2s ease;
+      /* float: right; */
+      margin-top: 20px;
+      margin:5px;
+      /* margin-right: 25px; */
+      /* margin-left: 30px; */
+    }
+    .bbutton{
+      position: relative;
+      padding: 10px 22px;
+      border-radius: 6px;
+      border: none;
+      color: #27b3ff;
+      cursor: pointer;
+      background-color: #ef1f49;
+      transition: all 0.2s ease;
+      /* float: right; */
+      margin-top: 20px;
+      margin-right: 25px;
+      margin-left: 550px;
+
+
+    }
+  
+    .button1{
+      position: relative;
+      padding: 10px 22px;
+      border-radius: 6px;
+      border: none;
+      color: #b2f1fc;
+      cursor: pointer;
+      background-color: #8a1fef;
+      transition: all 0.2s ease;
+      float: right;
+      margin-top: 20px;
+      margin-right: 25px;
+      
+    }
+    
+    .button:active {
+      transform: scale(0.96);
+    }
+    
+    .button:before,
+    .button:after {
+      position: absolute;
+      content: "";
+      width: 150%;
+      left: 50%;
+      height: 100%;
+      transform: translateX(-50%);
+      z-index: -1000;
+      background-repeat: no-repeat;
+    }
+    
+    .button:hover:before {
+      top: -70%;
+      background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+      background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+        10% 10%, 18% 18%;
+      background-position: 50% 120%;
+      animation: greentopBubbles 0.6s ease;
+    }
+    
+    @keyframes greentopBubbles {
+      0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+          40% 90%, 55% 90%, 70% 90%;
+      }
+    
+      50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+          50% 50%, 65% 20%, 90% 30%;
+      }
+    
+      100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+          50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+    }
+    
+    .button:hover::after {
+      bottom: -70%;
+      background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+        radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+      background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+      background-position: 50% 0%;
+      animation: greenbottomBubbles 0.6s ease;
+    }
+    
+    @keyframes greenbottomBubbles {
+      0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+          70% -10%, 70% 0%;
+      }
+    
+      50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+          105% 0%;
+      }
+    
+      100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+          110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+    }
+    #footer{
+
+        font-size: 20px;
+        color: blue;
+        font-family: 'Baloo Bhai', cursive;
+        background-color: #C850C0;
+        text-align: center;
+        margin-top: 100vh;
+
+    }
+  #heading{
+
+    color: #8d0d0d;
+    background-color: #FFCC70;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    justify-content:center ;
+    text-align: center;
+  }
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+#items{
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: space space-between;
+    background-color: #05dbef;
+    color: #8d0d0d;
+
+}
+
+@media only screen and (max-width: 750px) {
+  /* Adjustments for screens with a maximum width of 750px */
+
+  body.body #aa.A nav#nav.navbar ul li a[href='/'] {
+      /* Update styles for home link in the navbar */
+      color: white/* Your color */;
+      /* Add any other necessary styles */
+  }
+
+  /* Add similar adjustments for other elements as needed */
+  .B h2 {
+      /* Your styles for h2 in smaller screens */
+  }
+
+  .B .card .city1 h1,
+  .B .card .city2 h1,
+  .B .card .city3 h1,
+  .B .card .city4 h1,
+  .B .card .city5 h1 {
+      /* Your styles for h1 elements in smaller screens */
+      margin: 10px 0;
+      display: block;
+
+  }
+
+  .B h2 {
+      /* Your styles for h2 in smaller screens */
+  }
+
+  .E .flip-card {
+      /* Your styles for flip cards in smaller screens */
+      margin-bottom: 15px;
+      display: block;
+  }
+
+  .main .up button.card1,
+  .main .up button.card2,
+  .main .up button.card3,
+  .main .up button.card4 {
+      /* Your styles for buttons in smaller screens */
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  footer.footer-section .footer-cta,
+  footer.footer-section .footer-content .row .col-xl-4,
+  footer.footer-section .footer-content .row .col-lg-4,
+  footer.footer-section .footer-content .row .col-md-4,
+  footer.footer-section .footer-content .row .col-md-6 {
+      /* Your styles for footer elements in smaller screens */
+      margin-bottom: 30px;
+  }
+}

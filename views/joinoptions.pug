@@ -1,0 +1,83 @@
+html
+  head
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image:url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg")
+         /* Scales the image to cover the entire background */
+        
+      }
+      .container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: #3498db;
+        margin: 10px;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+        line-height: 150px;
+        font-size: 18px;
+      }
+      .box img {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      a{
+        color:aqua;
+      }
+
+  body
+    .container
+      .heading
+        | Select the City
+      .box-container
+        .box.city1
+          a(href='/newcity1options')
+            img(src='/static/city1.jpg') 
+            |Mumbai
+            
+          
+        .box.city2
+          a(href='/newcity2options')
+            img(src='/static/city2.png')
+            |Chennai
+          
+        .box.city3
+          a(href='/newcity3options')
+            img(src='/static/city3.jpg')
+            |Delhi
+          
+        .box.city4
+          a(href='/newcity4options')
+            img(src='/static/city4.jpg')
+            |Hyderabad
+          
+        .box.city5
+          a(href='/newcity5options')
+            img(src='/static/city5.jpg')
+            |Goa

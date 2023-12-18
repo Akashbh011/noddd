@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda</title>
+    <link rel="stylesheet" href="./shoping.css">
+    <link rel="shortcut icon" href="./images/4.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/383502b0d8.js" crossorigin="anonymous"></script>
+    <!-- add google font -->
+</head>
+
+<style>
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0;
+}
+#right{
+    position: relative;
+}
+header #right span{
+    position: absolute;
+    top: -67%;
+    right: -11%;
+    color: red;
+
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,30%); /*3 for how many row and 30% for how much range */
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+main div{
+    /* width: 20%; */
+    border: 5px;
+} 
+main div img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+main div h3{
+    text-align: center;
+}
+main div p{
+    text-align: center;
+}
+main div div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+main div button{
+    width:100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: purple;
+    border-radius: 5px;
+    color: wheat;
+    font-size: 1.5rem;
+    
+}
+#popup{
+    width:30%;
+    height: 100vh;
+    background-color: burlywood;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+#popup #static div{
+    display: flex;
+    justify-content: end;
+
+}
+#popup #static h2{
+  text-align: center;
+}
+#dynamic .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#dynamic .cont img{
+    height: 6rem;
+    width: 4rem;
+    object-fit: cover;
+
+}
+#dynamic .cont h3{
+color: red;
+margin-bottom: 0;
+
+}
+#dynamic .cont p{
+    color: chartreuse;
+    font-size: 900;
+    
+
+}
+#dynamic .cont input{
+    height: 1rem;
+    width: 3rem;
+    
+
+}
+.fa-solid.fa-trash-can{
+    color: blue;
+    margin-left: 1rem;
+}
+#payments{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+#payments p{
+    text-align: right;
+    font-size: 1.5rem;
+}
+#payments button{
+    width:100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: purple;
+    border-radius: 5px;
+    color: wheat;
+    font-size: 1.5rem;
+    
+}
+.buttonbb{
+    background-color: chartreuse;
+    color: blue;
+    padding :9px;
+    margin-right: 50px;
+}
+.fa-solid{
+    margin-right: 50px;
+}
+</style>
+
+<body>
+
+<header>
+    <div id="left"><h2>   REGULAR CATEGORY - from - ( 2 Days ) - to - ( 2 Months )</h2></div>
+    <div id="right">
+        <a href='/city1'><button class="buttonbb" >Change Category</button></a>
+        <a href='/'><button class="buttonbb" >Home</button></a>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span></span>
+    </div>
+</header>
+
+<section id="popup">
+    <div id="static">
+        <div><i class="fa-solid fa-circle-xmark"></i></div>
+    <h2>Your Cart</h2>
+    
+</div>
+    
+<div id="dynamic">
+    
+</div>
+
+<div id="payments">
+    <p id="total">Total :</p>
+    <a href='/newd'><button>PROCEED</button></a>
+
+
+</div>
+</section>
+
+<main>
+
+
+</main>
+
+    <!-- <script src="./shoping.js"></script> -->
+    <script>
+
+// console.log("js file connected . now insert images");
+var storage=[{
+    id:"div1",
+    src:"https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+    shirt:"Axians laptop",
+    price:"89599",
+    rating:"4.5",
+    flag:false
+
+
+}
+,{    id:"div2",
+    src:"https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    shirt:"Macbook Pro",
+    price:"123499",
+    rating:"4.2",
+    flag:false
+},{
+        id:"div3",
+    src:"https://images.herzindagi.info/image/2023/Oct/Nikon-Camera.jpg",
+    shirt:"DSLR nikon",
+    price:"22650",
+    rating:"4.1",
+    flag:false
+},{
+        id:"div4",
+    src:"https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_hero_04202021_big.jpg.large.jpg",
+    shirt:"I-pad pro M1 ",
+    price:"55489",
+    rating:"4",
+    flag:false
+},{
+        id:"div5",
+    src:"https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1687810462/JBL_flip6_review_ty7olw",
+    shirt:"JBL Flip-6",
+    price:"4999",
+    rating:"4.3",
+    flag:false
+},{
+        id:"div6",
+    src:"https://www.pcwelt.de/wp-content/uploads/2023/04/4351484_original.jpg?quality=50&strip=all&w=1024",
+    shirt:"ASUS RT-AX53U Routers",
+    price:"3000",
+    rating:"4.2",
+    flag:false
+}];
+
+console.log("js file connected . now insert images");
+
+var main=document.querySelector("main")
+var logo=document.querySelector(".fa-solid.fa-cart-shopping")
+var popup=document.querySelector("#popup")
+var close=document.querySelector(".fa-solid.fa-circle-xmark")
+
+function open(){
+    logo.addEventListener("click",()=>{
+        popup.style.right="0"
+    })
+    close.addEventListener("click",()=>{
+        popup.style.right="-100%"
+    })
+}
+
+function cart(data) {
+    data.forEach((e) => {
+        main.innerHTML += `
+        <div id="${e.id}">
+            <img src="${e.src}" alt="">
+            <h3>${e.shirt}</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <div><span>${e.price}</span>
+                <span>${e.rating}</span>
+            </div>
+            <button class="fav"><i class="fa-solid fa-bag-shopping"></i></button>
+        </div>`;
+    });
+}
+
+function addcart() {
+    var fav = document.querySelectorAll(".fav");
+
+    fav.forEach((a) => {
+        a.addEventListener("click", () => {
+            popup.style.right = "0";
+
+            var parentid = a.parentElement.id;
+            
+
+            storage.forEach((b) => {
+                if (parentid == b.id && !b.flag) {
+                    var dynamic = document.querySelector("#dynamic");
+                    dynamic.innerHTML += `<div class="cont">
+                        <img src="${b.src}" alt="">
+                        <div>
+                            <h3>${b.shirt}</h3>
+                            <p>RS.${b.price}</p>
+                            <input type="number" class="input">
+                        </div>
+                        <div><span class="sub">RS.${b.price}</span><i class="fa-solid fa-trash-can"></i></div>
+                    </div>`;
+
+                    b.flag = true;
+                }
+                remove();
+                calcu();
+                total();
+
+                // Make an AJAX request to fetch updated data from the server
+                
+            });
+        });
+    });
+}
+
+function remove(){
+    var del=document.querySelectorAll(".fa-solid.fa-trash-can")
+    del.forEach((c)=>{
+        c.addEventListener("click",()=>{
+            // c.parentElement.parentElement.remove()
+
+            var parentelemt=c.parentElement.parentElement
+            var goa=parentelemt.querySelector("h3")
+            storage.forEach((j)=>{
+                if(j.shirt==goa.innerHTML){
+                    j.flag=false
+                }
+                
+
+
+            })
+            parentelemt.remove()
+            total()
+        })
+    })
+}
+
+function calcu(){
+    var input=document.querySelectorAll(".input")
+    input.forEach((d)=>{
+        d.addEventListener("input",()=>{
+            if(d.value<1 || isNaN(d.value)){
+                d.value=1
+            }
+            var parent=d.parentElement.parentElement
+            var price=parent.querySelector("p").innerHTML.replace("RS.","")
+            var subtotal=d.value*price
+            var sub=parent.querySelector(".sub")
+            sub.innerHTML=`Rs.${subtotal}`
+
+            total()
+        })
+    })
+
+
+}
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function total() {
+    var gtotal = document.querySelector("#total");
+    var gsub = document.querySelectorAll(".sub");
+    var temp = 0;
+
+    gsub.forEach((f) => {
+        f = parseInt(f.innerHTML.replace("Rs.", ""));
+        temp = temp + f;
+    });
+
+    if (gsub.length > 0) {
+        gtotal.innerHTML = `Total : Rs.${temp}`;
+
+        // Set the total amount in a cookie (you can change the cookie name)
+        setCookie('totalAmount', temp, 7); // Cookie expires in 7 days
+    } else {
+        gtotal.innerHTML = "Total :";
+
+        // Clear the totalAmount cookie if the cart is empty
+        setCookie('totalAmount', '', -1); // Set the expiration date to a past date
+    }
+}
+
+
+
+function shopping() {
+    // Make an AJAX request to fetch data from the server
+    fetch('/get-storage-data')
+        .then((response) => response.json())
+        .then((data) => {
+            // Update your page with the retrieved data
+            cart(data);
+            open();
+            addcart();
+        })
+        .catch((error) => {
+            console.error('Error fetching data:', error);
+        });
+
+
+        fetch('/get-storage-data')
+                    .then((response) => response.json())
+                    .then((data) => {
+                        // Update the storage array with the fetched data
+                        storage = data;
+                    })
+                    .catch((error) => {
+                        console.error('Error fetching updated storage data:', error);
+                    });
+}
+
+shopping();
+
+
+    </script>
+
+
+
+</body>
+</html>
