@@ -1,9 +1,3 @@
-![image](https://github.com/user-attachments/assets/f228eb0d-e757-432a-8ba7-a0e2f1fa9829)# nodeapp
-![image](https://github.com/user-attachments/assets/9533ab18-7033-4c98-a3ac-381f67fcb9a6)
-![image](https://github.com/user-attachments/assets/9b81758e-9a52-43ab-b649-dda1cb2b7ffc)
-![image](https://github.com/user-attachments/assets/588cea18-c217-4ae9-aaec-4d0f76cac449)
-
-
 
 THIS IS A E RENTAL WEBSITE FOR A NORMAL PERSON TO USE ,AS WELL AS IT IS A GREAT PLATFORM FOR ALL THE SMALL SCALE RETAILERS TO HAVE THEIR PRODUCTS MUCH MORE AVAILABLE WITH A LARGE GROUP OF PEOPLE WORLDWIDE 
 IT HAS FEATURES LIKE,
@@ -14,3 +8,10 @@ IT HAS FEATURES LIKE,
 
 DEPLOYED ON RENDER AND FOR DATABASE DEPLOYMENT I USED MONGODB 
 WEBSITE LINK - : https://node-mongo-app-izpv.onrender.com
+
+![image](https://github.com/user-attachments/assets/f228eb0d-e757-432a-8ba7-a0e2f1fa9829)# nodeapp
+![image](https://github.com/user-attachments/assets/9533ab18-7033-4c98-a3ac-381f67fcb9a6)
+![image](https://github.com/user-attachments/assets/9b81758e-9a52-43ab-b649-dda1cb2b7ffc)
+![image](https://github.com/user-attachments/assets/588cea18-c217-4ae9-aaec-4d0f76cac449)
+
+
